@@ -108,21 +108,8 @@ We release our calibration toolkit, source codes, and how to make the calibratio
       </div>
       <div style="margin-top: 35px;">
         <p>
-          NeRF optimizes the reconstruction loss for a given set of input images (<span class="text-primary">blue
-            cameras</span>).
-          For sparse inputs, however, this leads to degenerate solutions.
-          In this work, we propose to sample unobserved views (<span class="text-danger">red cameras</span>) and <span
-            style="font-weight: bold;"> regularize the geometry and appearance of patches</span> rendered from those
-          views.
-          More specifically, we cast rays through the scene and render patches from unobserved viewpoints for a given
-          radiance field f.
-          We then regularize appearance by feeding the predicted RGB patches through a trained normalizing flow model
-          phi
-          and maximizing predicted log-likelihood.
-          We regularize geometry by enforcing a smoothness loss on the rendered depth patches.
-          Further, we avoid divergence at early stages of optimization by annealing the scene sampling space ofter the first iterations.
-          Our approach leads to 3D-consistent representations <span style="font-weight: bold;">even for sparse input
-            scenarios with as few as 3 input views</span> from which realistic novel views can be rendered.
+          (<span class="text-danger">red cameras</span>) and <span
+            style="font-weight: bold;"> 
         </p>
       </div>
     </div>
@@ -182,43 +169,17 @@ We release our calibration toolkit, source codes, and how to make the calibratio
             href="ours.html" target="_blank">more view synthesis results from our method</a>.
         </p> -->
         <p>For more results, check out:</p>
-        <div class="row">
-          <div class="col-md-6 col-sm-6 col-xs-6 gallery">
-            <div class="text-center">
-              <a href="comparisons.html" target="_blank">
-                <h4>Comparison to Baselines</h4>
-                <img src="gfx/comparisons/ours/n9trex_thumbnail.gif" alt="Comparison Image" class="rounded">
-              </a>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6 gallery">
-            <div class="text-center">
-              <a href="ours.html" target="_blank">
-                <h4>More Results from our Method</h4>
-                <img src="gfx/ours/n9_orchids_thumbnail.gif" alt="Ours Image" class="rounded">
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
       <div>
         <h2 class="text-center" style="margin-top: 30px;">
           Citation
         </h2>
         <p>
-          If you want to cite our work, please use:
+         
         </p>
   
       </div>
       
-      <div>
-        <h2 class="text-center" style="margin-top: 30px;">
-          Homepage Template
-        </h2>
-        <p>
-        </p>
-      </div>
-
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
