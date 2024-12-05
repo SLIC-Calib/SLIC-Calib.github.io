@@ -110,15 +110,43 @@ We release our calibration toolkit, source codes, and how to make the calibratio
     <h2>
       Method Overview
     </h2>
-        <img src="gif/method.gif" alt="Comparison Image" style="display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 10px;">
-  </div>
-  <div style="margin-top: 35px;">
+    <h4>View Synthesis from 3 Input Views</h4>
     <p>
       (<span class="text-danger">red cameras</span>) and <span style="font-weight: bold;"></span>
     </p>
+        <img src="gif/method.gif" alt="Comparison Image" style="display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 10px;">
+  </div>
+  <div style="margin-top: 35px;">
+    
   </div>
 </div>
-
+ <div style="margin-top: 50px;">
+      <div class="text-center">
+        <h2>
+          Method Overview
+        </h2>
+        <img src="gfx/teaser.svg" width=100% class="img-fluid" alt="Responsive image">
+      </div>
+      <div style="margin-top: 35px;">
+        <p>
+          NeRF optimizes the reconstruction loss for a given set of input images (<span class="text-primary">blue
+            cameras</span>).
+          For sparse inputs, however, this leads to degenerate solutions.
+          In this work, we propose to sample unobserved views (<span class="text-danger">red cameras</span>) and <span
+            style="font-weight: bold;"> regularize the geometry and appearance of patches</span> rendered from those
+          views.
+          More specifically, we cast rays through the scene and render patches from unobserved viewpoints for a given
+          radiance field f.
+          We then regularize appearance by feeding the predicted RGB patches through a trained normalizing flow model
+          phi
+          and maximizing predicted log-likelihood.
+          We regularize geometry by enforcing a smoothness loss on the rendered depth patches.
+          Further, we avoid divergence at early stages of optimization by annealing the scene sampling space ofter the first iterations.
+          Our approach leads to 3D-consistent representations <span style="font-weight: bold;">even for sparse input
+            scenarios with as few as 3 input views</span> from which realistic novel views can be rendered.
+        </p>
+      </div>
+    </div>
 
     
     <div style="margin-top:10px;">
