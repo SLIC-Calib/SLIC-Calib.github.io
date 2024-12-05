@@ -18,184 +18,211 @@
     padding: 0;
     margin: 0;
     outline: none;
-}
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <br>
-    <div style="text-align: center;">
-      <h1> <b>SLIC-Calib</b>: Single-Point LiDAR and Camera Calibration Leveraging Manhattan World</h1>
+    <div style="text-align: center;">  
+      <h1> <b>SLIC-Calib<b>: Single-Point LiDAR and Camera Calibration Leveraging Manhattan World</h1>
+  
       <div style="margin-top: 15px;">
-        <span style="margin-right: 15px; font-size: 1.3em;">Anonymous authors<sup>1</sup></span>
+        <span style="margin-right: 15px; font-size: 1.3em;"><a href="https://m-niemeyer.github.io/" target="_blank">Michael Niemeyer<sup>1,2,3</sup></a></span>
+    
       </div>
-     
-    <div>
-      <h2 class="text-center" style="margin-top: 25px;">
-        More Results from our Method
-      </h2>
-      <h4>
-        View Synthesis with 3 Input Views
-      </h4>
-      <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n3_orchids.mp4" type="video/mp4">
-            </video>
-          </div>
+      
+    <div class="text-center" style="font-size: 1.5em; margin-top: 25px;">
+      <a class="btn btn-primary btn-lg" target="_blank"
+        style="margin-right: 10px; margin-bottom: 10px;">Paper</a>
+      <a class="btn btn-primary btn-lg" target="_blank"
+        href="https://youtu.be/QyyyvA4-Kwc" role="button"
+        style="margin-right: 10px; margin-bottom: 10px;">Video</a>
+      <a class="btn btn-primary btn-lg" target="_blank"
+        href="https://drive.google.com/file/d/15ip8Fvfxp6rNRfBnbJEnFCjIJeFMH4CE/view?usp=sharing" role="button"
+        style="margin-right: 10px; margin-bottom: 10px;">Supplementary</a>
+      <a class="btn btn-primary btn-lg" target="_blank"
+        href="https://arxiv.org/abs/2112.00724" role="button"
+        style="margin-right: 10px;  margin-bottom: 10px;">Arxiv</a>
+      <a class="btn btn-primary btn-lg" target="_blank"
+        href="https://drive.google.com/file/d/1kYknB2Ap3I3avstmPxAa9IiW8m85AZEF/view?usp=sharing" role="button"
+        style="margin-right: 10px; margin-bottom: 10px;">Poster</a>
+      <a class="btn btn-primary btn-lg" target="_blank"
+        href="https://github.com/google-research/google-research/tree/master/regnerf" role="button"
+        style="margin-bottom: 10px;">Code</a>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="embed-responsive embed-responsive-21by9">
+          <video controls loop muted autoplay class="embed-responsive-item">
+            <source src="gfx/room_videos/n3_text.mp4" type="video/mp4">
+          </video>
         </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n3_flower.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n3_leaves.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="margin-top: 15px;">
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n3_scan103.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n3_scan114.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n3_scan63.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-      <h4 style="margin-top: 35px;">
-        View Synthesis with 6 Input Views
-      </h4>
-      <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n6_fern.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n6_room.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n6_flower.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="margin-top: 15px;">
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n6_scan31.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n6_scan34.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n6_scan41.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-      <h4 style="margin-top: 35px;">
-        View Synthesis with 9 Input Views
-      </h4>
-      <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n9_leaves.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n9_orchids.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n9_trex.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="margin-top: 15px;">
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n9_scan110.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n9_scan21.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 gallery center-block text-center">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/ours/n9_scan45.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
+        <p class="text-center" style="font-size: 1.5em;">
+          <span style="font-weight: bold;">RegNeRF</span> enables realistic view synthesis from as few as 3 input
+          images.
+        </p>
       </div>
     </div>
-  </div>
+    <div style="margin-top: 30px;">
+      <h2 class="text-center">
+        Abstract
+      </h2>
+      <p style="font-style: italic; margin-bottom: 5px;">
+We propose a novel calibration method between single-point LiDAR and camera sensors utilizing an easy-to-build customized calibration board satisfying the Manhattan world (MW).
+Previous approaches for LiDAR-camera (LC) calibration focus on line and plane correspondences.
+However, they require dense point clouds from heavy LiDAR to simplify alignment; otherwise, these approaches fail for extremely sparse LiDAR.
+The compact size and lightweight single-point LiDARs make them ideal for micro-robotics where size and weight are constrained.
+To address these gaps, we present a new extrinsic calibration method with a new calibration board, which rotates like a door to capture geometric features and align them with images.
+Once we find an initial estimate, we refine the relative rotation by minimizing the angle difference between the grid orientation of the checkerboard and the MW axes.
+We demonstrate the effectiveness of the proposed method through various LC configurations, achieving its capability and high accuracy compared to other state-of-the-art approaches.
+We release our calibration toolkit, source codes, and how to make the calibration target boards at: {\textcolor{magenta}{\url{https://SLIC-Calib.github.io/}}}.
+      </p>
+      <p style="font-size: 1.2em; margin-top: 0px;">
+        <span style="font-weight: bold;">TL;DR:</span> We regularize unseen views during optimization to enable view
+        synthesis from sparse inputs with as few as 3 input images.
+      </p>
+    </div>
+    <div style="margin-top:10px;">
+      <h2 class="text-center">
+        Video
+      </h2>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QyyyvA4-Kwc" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div style="margin-top: 50px;">
+      <div class="text-center">
+        <h2>
+          Method Overview
+        </h2>
+        <img src="gfx/teaser.svg" width=100% class="img-fluid" alt="Responsive image">
+      </div>
+      <div style="margin-top: 35px;">
+        <p>
+          NeRF optimizes the reconstruction loss for a given set of input images (<span class="text-primary">blue
+            cameras</span>).
+          For sparse inputs, however, this leads to degenerate solutions.
+          In this work, we propose to sample unobserved views (<span class="text-danger">red cameras</span>) and <span
+            style="font-weight: bold;"> regularize the geometry and appearance of patches</span> rendered from those
+          views.
+          More specifically, we cast rays through the scene and render patches from unobserved viewpoints for a given
+          radiance field f.
+          We then regularize appearance by feeding the predicted RGB patches through a trained normalizing flow model
+          phi
+          and maximizing predicted log-likelihood.
+          We regularize geometry by enforcing a smoothness loss on the rendered depth patches.
+          Further, we avoid divergence at early stages of optimization by annealing the scene sampling space ofter the first iterations.
+          Our approach leads to 3D-consistent representations <span style="font-weight: bold;">even for sparse input
+            scenarios with as few as 3 input views</span> from which realistic novel views can be rendered.
+        </p>
+      </div>
+    </div>
+    <div style="margin-top:50px;">
+      <h2 class="text-center">
+        Results
+      </h2>
+      <h4>View Synthesis from 3 Input Views</h4>
+      <p>
+        While mip-NeRF leads to degenerate view synthesis and predicted scene geometry, our method enables realistic
+        view synthesis from 3 input views.
+      </p>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 gallery">
+          <div class="embed-responsive embed-responsive-21by9">
+            <video controls loop muted autoplay class="embed-responsive-item">
+              <source src="gfx/room_videos/n3_text.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <h4>View Synthesis from 6 Input Views</h4>
+      <p>
+        For 6 input views, mip-NeRF improves but predicted renderings and the optimized scene geometry still contain
+        floating artifacts. Our approach leads to smooth predicted scene geometry and realistic novel views.
+      </p>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 gallery">
+          <div class="embed-responsive embed-responsive-21by9">
+            <video controls loop muted autoplay class="embed-responsive-item">
+              <source src="gfx/room_videos/n6_text.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <h4>View Synthesis from 9 Input Views</h4>
+      <p>
+        For 9 input views, mip-NeRF and our method both lead to high-quality view synthesis. For mip-NeRF, small
+        floating artfiacts for far-away novel views near the table are still visible while our predicted scene geometry
+        appears more realistic.
+      </p>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 gallery">
+          <div class="embed-responsive embed-responsive-21by9">
+            <video controls loop muted autoplay class="embed-responsive-item">
+              <source src="gfx/room_videos/n9_text.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:50px;">
+        <h2 class="text-center">
+          More Results
+        </h2>
+        <!-- <p style="margin-top: 10px;">
+          For more results, check out <a href="comparisons.html" target="_blank">the baseline comparisons</a> or <a
+            href="ours.html" target="_blank">more view synthesis results from our method</a>.
+        </p> -->
+        <p>For more results, check out:</p>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6 gallery">
+            <div class="text-center">
+              <a href="comparisons.html" target="_blank">
+                <h4>Comparison to Baselines</h4>
+                <img src="gfx/comparisons/ours/n9trex_thumbnail.gif" alt="Comparison Image" class="rounded">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6 gallery">
+            <div class="text-center">
+              <a href="ours.html" target="_blank">
+                <h4>More Results from our Method</h4>
+                <img src="gfx/ours/n9_orchids_thumbnail.gif" alt="Ours Image" class="rounded">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="text-center" style="margin-top: 30px;">
+          Citation
+        </h2>
+        <p>
+          If you want to cite our work, please use:
+        </p>
+  
+      </div>
+      
+      <div>
+        <h2 class="text-center" style="margin-top: 30px;">
+          Homepage Template
+        </h2>
+        <p>
+        </p>
+      </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
