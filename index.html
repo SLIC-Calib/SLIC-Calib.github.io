@@ -111,7 +111,7 @@
 <div style="margin-top: 50px; text-align: center;">
   <div class="text-center">
     <h2>Target Board</h2>
-    <div style="width: 90%; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 30px;">
+    <div style="width: 80%; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 30px;">
       <!-- GIF -->
       <div style="flex: 1; max-width: 45%; text-align: center;">
         <img src="gif/board.gif" alt="GIF" style="width: 100%; height: auto; border-radius: 0px;">
@@ -121,7 +121,7 @@
         <img src="gif/mw.png" alt="Image" style="width: 100%; height: auto; border-radius: 0px;">
       </div>
     </div>
-    <div style="margin-top: 60px; width: 100%; margin: 0 auto; text-align: justify;">
+    <div style="margin-top: 60px; width: 120%; margin: 0 auto; text-align: justify;">
       <p style="margin-bottom: 20px;">
         Custom-built calibration target board to extract point and line features: <b>(1)</b> Completely flat that satisfies the Manhattan world.
         <b>(2)</b> Multiple black-and-white grids row extend 300 mm horizontally, with a square hole at the lower center of the grid.
@@ -137,7 +137,12 @@
     <h2>Calibration Method</h2>
     <img src="gif/method.gif" alt="Comparison Image" style="max-width: 80%; height: auto; border-radius: 10px;">
   <div style="margin-top: 35px;">
-    <p></p>
+    <div style="margin-top: 60px; width: 120%; margin: 0 auto; text-align: justify;">
+      <p style="margin-bottom: 20px;"> 
+      The single-point LiDAR provides only a distance value in a single direction. 
+        We utilize the square hole in the target board to extend the distance value into three points, requiring knowledge of both the grid and hole width. We can detect three points expressed in the LiDAR coordinate system for each frame.
+In the image from the camera and it perceives the square hole as a black grid due to the black wall visible through it and does not recognize it as an open hole.
+      </p>
   </div>
 </div>
 
