@@ -125,25 +125,15 @@ We release our calibration toolkit, source codes, and how to make the calibratio
         <h2>
           Method Overview
         </h2>
-        <img src="gfx/teaser.svg" width=100% class="img-fluid" alt="Responsive image">
+        <img src="gfx/figure_method_framework.png" width=100% class="img-fluid" alt="Responsive image">
       </div>
       <div style="margin-top: 35px;">
         <p>
-          NeRF optimizes the reconstruction loss for a given set of input images (<span class="text-primary">blue
-            cameras</span>).
-          For sparse inputs, however, this leads to degenerate solutions.
-          In this work, we propose to sample unobserved views (<span class="text-danger">red cameras</span>) and <span
-            style="font-weight: bold;"> regularize the geometry and appearance of patches</span> rendered from those
-          views.
-          More specifically, we cast rays through the scene and render patches from unobserved viewpoints for a given
-          radiance field f.
-          We then regularize appearance by feeding the predicted RGB patches through a trained normalizing flow model
-          phi
-          and maximizing predicted log-likelihood.
-          We regularize geometry by enforcing a smoothness loss on the rendered depth patches.
-          Further, we avoid divergence at early stages of optimization by annealing the scene sampling space ofter the first iterations.
-          Our approach leads to 3D-consistent representations <span style="font-weight: bold;">even for sparse input
-            scenarios with as few as 3 input views</span> from which realistic novel views can be rendered.
+          Our main idea is to establish 2D-3D correspondences between the LiDAR and camera frames by inducing rotational motion on a new calibration target board.
+Furthermore, we refine the relative rotation between two sensors by aligning the orientation of the calibration target board with respect to the MW axes. 
+          (a) We detect three points (<span class="text-danger">red</span>) based on the accumulated points (<span class="text-primary">blue</span>) from single-point LiDAR by utilizing the geometric characteristics of the proposed new calibration target board. (b) We extract three parallel vertical and horizontal lines in the image and detect the MW aligned to them.
+(c) Given three points, parallel lines, and the MW, we find the relative rotation and translation between two sensors by minimizing the point-to-line distances and angle differences.
+          
         </p>
       </div>
     </div>
