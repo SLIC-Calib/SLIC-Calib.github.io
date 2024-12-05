@@ -124,13 +124,13 @@ We release our calibration toolkit, source codes, and how to make the calibratio
         <h2>
           Method Overview
         </h2>
-        <img src="gif/figure_method_framework.png" width=100% class="img-fluid" alt="Responsive image">
+        <img src="gif/framework.gif" alt="Comparison Image" style="display: block; margin: 0 auto; max-width: 100%; height: auto; border-radius: 10px;">
       </div>
       <div style="margin-top: 35px;">
         <p>
           Our main idea is to establish 2D-3D correspondences between the LiDAR and camera frames by inducing rotational motion on a new calibration target board.
 Furthermore, we refine the relative rotation between two sensors by aligning the orientation of the calibration target board with respect to the MW axes. 
-          (a) We detect three points (<span class="text-danger">red</span>) based on the accumulated points (<span class="text-primary">blue</span>) from single-point LiDAR by utilizing the geometric characteristics of the proposed new calibration target board. (b) We extract three parallel vertical and horizontal lines in the image and detect the MW aligned to them.
+          (a) We detect three points based on the accumulated points from single-point LiDAR by utilizing the geometric characteristics of the proposed new calibration target board. (b) We extract three parallel vertical and horizontal lines in the image and detect the MW aligned to them.
 (c) Given three points, parallel lines, and the MW, we find the relative rotation and translation between two sensors by minimizing the point-to-line distances and angle differences.
           
         </p>
