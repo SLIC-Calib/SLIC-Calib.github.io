@@ -729,6 +729,21 @@ input:checked + .slider:before {
     height: auto; /* Maintain aspect ratio */
     opacity: 0.8; 
 }
+.nav-pills li {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.nav-pills img {
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-pills h4 {
+    margin-top: 10px;
+}
+
 
 @media screen and (max-width: 550px) {
     .title {
